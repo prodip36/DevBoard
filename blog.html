@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#f4f7ff]">
+    <header class="w-11/12 mx-auto py-5">
+      <nav class="p-3 flex justify-between bg-white rounded-lg">
+        <div class="flex items-center gap-2">
+          <img src="./assets/logo.png" alt="" />
+          <h2 class="text-xl">Dev<span class="font-bold">Board</span></h2>
+        </div>
+        <div class="">
+          <button onclick="goToPage()" class="btn bg-[#3c2ad7] text-white">Back to Desk</button>
+        </div>
+      </nav>
+      <nav
+        class="text-center font-bold text-xl items-center justify-center py-5"
+      >
+        Blogs
+      </nav>
+    </header>
+    <main class="w-11/12 mx-auto space-y-5 mb-5">
+        <!-- ques-1 -->
+      <div class="bg-white p-5 space-y-3 rounded-lg">
+        <h2 class="font-semibold text-2xl">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </h2>
+        <p class="text-xl">
+          These methods allow you to select elements based on their ID, class,
+          tag name, or other attributes.
+        </p>
+        <ol>
+          <li>By ID: Use getElementById()</li>
+          <li>By class: Use getElementsByClassName() or querySelector()</li>
+          <li>By tag name: Use getElementsByTagName() or querySelector()</li>
+          <li>By attributes or complex selectors: Use querySelector()</li>
+        </ol>
+      </div>
+      <!-- ques-2 -->
+      <div class="bg-white p-5 space-y-3 rounded-lg">
+        <h2 class="font-semibold text-2xl">
+         Question-2: What is the difference between innerHTML, innerText, and textContent ?
+        </h2>
+        <p class="text-xl">
+        The main difference is that innerHTML returns the HTML markup as a string, innerText returns visible text content while considering CSS styling and layout, and textContent returns the raw text content of an element and all its descendants, ignoring styling and hidden elements.
+        </p>
+       
+      </div>
+      <!-- ques-3 -->
+      <div class="bg-white p-5 space-y-3 rounded-lg">
+        <h2 class="font-semibold text-2xl">
+          Question-3: What is event delegation in the DOM?
+        </h2>
+        <p class="text-xl">
+         Event delegation is a JavaScript technique where you attach a single event listener to a parent element instead of multiple listeners to its child elements. It works by leveraging the concept of event bubbling, where an event triggered on a child element "bubbles up" the DOM tree to its ancestors
+        </p>
+      
+      </div>
+      <!-- ques -4 -->
+      <div class="bg-white p-5 space-y-3 rounded-lg">
+        <h2 class="font-semibold text-2xl">
+    Question-4: What is event bubbling in the DOM?
+        </h2>
+        <p class="text-xl">
+    Event bubbling is a method of DOM event propagation where an event triggered on a specific element first runs its event handler on that element, then on its parent element, and so on, up the chain of ancestors until it reaches the root of the document. This means that when a click occurs on a child element, the event is also "bubbled up" and can be handled by parent elements.  
+        </p>
+        
+      </div>
+      <!-- ques -5 -->
+      <div class="bg-white p-5 space-y-3 rounded-lg">
+        <h2 class="font-semibold text-2xl">
+   Question-5: How do you create, add, and remove elements using JavaScript? 
+        </h2>
+        <p class="text-xl">
+     You can also loop through an array and remove each element using the pop() or shift() methods, which remove the last element of an array and the first element of an array, respectively
+        </p>
+    
+      </div>
+    </main>
+    <script src="./script/blog.js"></script>
+    <script src="./script/time.js"></script>
+    <script src="./script/utilities.js"></script>
+    <script src="./script/index.js"></script>
+  </body>
+</html>
