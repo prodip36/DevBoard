@@ -29,14 +29,14 @@
         </div>
       </nav>
     </header>
-    <main class="w-11/12 mx-auto">
+    <main class="w-11/12 mx-auto flex gap-5">
       <!-- card section -->
       <section class="bg-white">
         <!-- card headings -->
         <div class="flex p-2 justify-between items-center">
           <!-- card 1 -->
           <div
-            class="flex gap-2 bg-[#f4f7ff] items-center justify-center rounded-md p-3"
+            class="flex gap-2 bg-[#f4f7ff] items-center justify-center rounded-md p-2"
           >
             <div class="bg-white rounded-full">
               <img class="w-8 p-2" src="./assets/checkbox.png" alt="" />
@@ -48,7 +48,7 @@
           </div>
           <!-- card 2 -->
           <div
-            class="bg-gradient-to-r from-[#3954fd] via-[#6479fb] to-[#99a6f8] w-2/3 rounded-md"
+            class="bg-gradient-to-r from-[#3954fd] via-[#6479fb] to-[#99a6f8] w-3/5 rounded-md"
           >
             <div class="flex p-3 justify-center items-center gap-5">
               <img class="w-10" src="./assets/board.png" alt="" />
@@ -71,6 +71,10 @@
             </div>
           </div>
         </div>
+        <!-- border dotted -->
+         <div class="border-b border-dashed border-gray-400 pb-2">
+
+         </div>
         <!-- card task -->
         <div class="p-5 gap-5 grid md:grid-cols-2 lg:grid-cols-3">
           <!-- task-1 -->
@@ -201,7 +205,23 @@
         </div>
       </section>
       <!-- activity log -->
-      <section></section>
+      <section class="w-3/4 bg-white">
+        <!-- head section of act. log -->
+         <div class="items-center justify-center text-center space-y-2">
+            <div class="flex items-center justify-center gap-3 p-4">
+                <img class="h-5 w-5" src="./assets/activity.png" alt="">
+                <h3 class="font-semibold">Activity Log</h3>
+            </div>
+            <button class="btn bg-[#3752fd] text-white">Clear History</button>
+         </div>
+         <div class="p-5 space-y-5">
+
+            <h2 class="bg-[#f4f7ff] p-2 rounded-lg text-sm">You have Complete The Task Add Dark Mode at 12:48:15 PM</h2>
+            <h2 class="bg-[#f4f7ff] p-2 rounded-lg text-sm">You have Complete The Task Add Dark Mode at 12:48:15 PM</h2>
+            <h2 class="bg-[#f4f7ff] p-2 rounded-lg text-sm">You have Complete The Task Add Dark Mode at 12:48:15 PM</h2>
+         </div>
+
+      </section>
     </main>
   </body>
 </html>
