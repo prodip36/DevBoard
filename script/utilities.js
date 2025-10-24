@@ -4,3 +4,6 @@ function getElementValueById(id){
 function SetElementValueById(id1,id2){
  document.getElementById(id1).innerHTML=id2;
 }
+function taskAlert(){
+    alert("Board Updated Successfully");
+}
