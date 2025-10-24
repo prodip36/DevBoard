@@ -7,3 +7,6 @@ function SetElementValueById(id1,id2){
 function taskAlert(){
     alert("Board Updated Successfully");
 }
+function finalAlert(){
+    alert('Congrats!! You have completed all the tasks.');
+}

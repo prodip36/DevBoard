@@ -3,6 +3,8 @@ document.getElementById("btn-card-1").addEventListener("click", (e) => {
   taskAlert();
   const task_assigned = parseFloat(getElementValueById("task-assign")) - 1;
   const total_task = parseFloat(getElementValueById("total-task")) + 1;
+  if(task_assigned===0)
+    finalAlert();
   SetElementValueById("task-assign", task_assigned);
   SetElementValueById("total-task", total_task);
   const card_title = getElementValueById("card-title-1");
@@ -25,6 +27,7 @@ document.getElementById("btn-card-2").addEventListener("click", (e) => {
   taskAlert();
   const task_assigned = parseFloat(getElementValueById("task-assign")) - 1;
   const total_task = parseFloat(getElementValueById("total-task")) + 1;
+  if (task_assigned === 0) finalAlert();
   SetElementValueById("task-assign", task_assigned);
   SetElementValueById("total-task", total_task);
   const card_title = getElementValueById("card-title-2");
@@ -46,6 +49,7 @@ document.getElementById("btn-card-3").addEventListener("click", (e) => {
   taskAlert();
   const task_assigned = parseFloat(getElementValueById("task-assign")) - 1;
   const total_task = parseFloat(getElementValueById("total-task")) + 1;
+  if (task_assigned === 0) finalAlert();
   SetElementValueById("task-assign", task_assigned);
   SetElementValueById("total-task", total_task);
   const card_title = getElementValueById("card-title-3");
@@ -68,6 +72,7 @@ document.getElementById("btn-card-4").addEventListener("click", (e) => {
   taskAlert();
   const task_assigned = parseFloat(getElementValueById("task-assign")) - 1;
   const total_task = parseFloat(getElementValueById("total-task")) + 1;
+  if (task_assigned === 0) finalAlert();
   SetElementValueById("task-assign", task_assigned);
   SetElementValueById("total-task", total_task);
   const card_title = getElementValueById("card-title-4");
@@ -90,6 +95,7 @@ document.getElementById("btn-card-5").addEventListener("click", (e) => {
   taskAlert();
   const task_assigned = parseFloat(getElementValueById("task-assign")) - 1;
   const total_task = parseFloat(getElementValueById("total-task")) + 1;
+  if (task_assigned === 0) finalAlert();
   SetElementValueById("task-assign", task_assigned);
   SetElementValueById("total-task", total_task);
   const card_title = getElementValueById("card-title-5");
@@ -112,6 +118,7 @@ document.getElementById("btn-card-6").addEventListener("click", (e) => {
   taskAlert();
   const task_assigned = parseFloat(getElementValueById("task-assign")) - 1;
   const total_task = parseFloat(getElementValueById("total-task")) + 1;
+  if (task_assigned === 0) finalAlert();
   SetElementValueById("task-assign", task_assigned);
   SetElementValueById("total-task", total_task);
   const card_title = getElementValueById("card-title-6");
@@ -133,3 +140,21 @@ document.getElementById("btn-card-6").addEventListener("click", (e) => {
 document.getElementById("clear-history").addEventListener("click", () => {
   SetElementValueById("activity-log", "");
 });
+function goToBlog(){
+    window.location.href="blog.html";
+}
+
+// color button
+document.getElementById('color-btn').addEventListener('click',()=>{
+       const randomColor =
+         "#" + Math.floor(Math.random() * 16777215).toString(16);
+       document.body.style.backgroundColor = randomColor;
+})
+// get date
+const getDate=()=>{
+   const date= document.getElementById('date');
+   date.innerHTML = `
+    <h2 class="text-xl font-bold">${todayDate()}</h2>
+   `;
+}
+getDate();
