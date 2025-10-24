@@ -21,7 +21,7 @@
         <div class="flex justify-between gap-5 items-center">
           <div class="flex gap-2 bg-[#f4f7ff] rounded-full p-2">
             <img src="./assets/checkbox.png" alt="" />
-            <h2 class="text-xl font-bold">20</h2>
+            <h2 id="total-task" class="text-xl font-bold">20</h2>
           </div>
           <div class="bg-[#f4f7ff] rounded-full p-2">
             <img class="w-7" src="./assets/theme-btn.png" alt="" />
@@ -43,7 +43,7 @@
             </div>
             <div class="">
               <h5 class="text-sm">Task Assigned</h5>
-              <h2 class="text-xl font-bold">6</h2>
+              <h2 id="task-assign" class="text-xl font-bold">6</h2>
             </div>
           </div>
           <!-- card 2 -->
@@ -80,7 +80,7 @@
           <!-- task-1 -->
           <div class="bg-[#f4f7ff] p-5 rounded-md space-y-2">
             <div class="w-20"><p class="p-2 rounded-md bg-white text-sm">ShopEase</p></div>
-            <div><h2 class="font-semibold text-xl">Fix Mobile Button Issue</h2></div>
+            <div><h2 id="card-title-1" class="font-semibold text-xl">Fix Mobile Button Issue</h2></div>
             <div>
               <p class="bg-white p-2 rounded-lg text-sm">
                 Debug using Chrome DevTools, check for overlapping elements, and
@@ -93,7 +93,7 @@
                 <h4 class="font-semibold">21 March 2025</h4>
               </div>
               <div>
-                <button class="btn text-white bg-[#3752fd]">Completed</button>
+                <button id="btn-card-1" class="btn text-white bg-[#3752fd]">Completed</button>
               </div>
             </div>
           </div>
@@ -212,16 +212,17 @@
                 <img class="h-5 w-5" src="./assets/activity.png" alt="">
                 <h3 class="font-semibold">Activity Log</h3>
             </div>
-            <button class="btn bg-[#3752fd] text-white">Clear History</button>
+            <button id="clear-history" class="btn bg-[#3752fd] text-white">Clear History</button>
          </div>
-         <div class="p-5 space-y-5">
+         <div id="activity-log" class="p-5 space-y-5">
 
-            <h2 class="bg-[#f4f7ff] p-2 rounded-lg text-sm">You have Complete The Task Add Dark Mode at 12:48:15 PM</h2>
-            <h2 class="bg-[#f4f7ff] p-2 rounded-lg text-sm">You have Complete The Task Add Dark Mode at 12:48:15 PM</h2>
-            <h2 class="bg-[#f4f7ff] p-2 rounded-lg text-sm">You have Complete The Task Add Dark Mode at 12:48:15 PM</h2>
+       
          </div>
 
       </section>
     </main>
+    <script src="./script/time.js"></script>
+    <script src="./script/utilities.js"></script>
+    <script src="./script/index.js"></script>
   </body>
 </html>
